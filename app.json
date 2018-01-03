@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/shopcar/shopcar",
+    "pages/shop/shop",
+    "pages/orderdetail/orderdetail",
+    "pages/tuoguan/tuoguan",
+    "pages/butuoguan/butuoguan",
+    "pages/wuliu/wuliu",
+    "pages/shouhou/shouhou",
+    "pages/tuihuo/tuihuo",
+    "pages/tixian/tixian",
+    "pages/phoneCheck/phoneCheck",
+    "pages/renzheng/renzhneg",
+    "pages/addressManagement/addressManagement",
+    "pages/wallet/wallet",
+    "pages/walletDetails/walletDetails",
+    "pages/mingxi/mingxi",
+    "pages/collect/collect",
+    "pages/adminKwd/adminKwd",
+    "pages/daifu/daifu",
+    "pages/yaoqing/yaoqing",
+    "pages/personalCenter/personalCenter",
+    "pages/unioCode/unioCode",
+    "pages/list1/list1",
+    "pages/list/list",
+    "pages/protocol/protocol",
+    "pages/money/money",
+    "pages/authentication/authentication"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#f00",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/shouye.png",
+        "selectedIconPath": "pages/img/on-shouye.png"
+      },
+      {
+        "pagePath": "pages/list1/list1",
+        "text": "分类",
+        "iconPath": "pages/img/fenlei.png",
+        "selectedIconPath": "pages/img/on-fenlei.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "pages/img/shopcar.png",
+        "selectedIconPath": "pages/img/on-shopcar.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "个人中心",
+        "iconPath": "pages/img/personal.png",
+        "selectedIconPath": "pages/img/on-personal.png"
+      }
+    ]
+  }
+}

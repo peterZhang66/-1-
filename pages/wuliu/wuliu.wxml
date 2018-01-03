@@ -1,0 +1,22 @@
+<view class="header .padding">
+  <image mode='widthFix' src='../img/xiezi.png'></image>
+  <view class="txt">
+    <text style='font-weight:bold;color:#f09d4e'>运输中</text>
+    <text>顺丰速运:32156553</text>
+    <text>官方电话：<text style='color:#61b0ed'>164156132</text> </text>
+  </view>
+</view>
+<view class="bg">
+  <view class="address">
+    <view class="empty"></view>
+    <image mode='widthFix' src='../img/dingwei.png'></image>
+    <text>北京市北京市北京市北京市北京市北京市北京市北京市北京市北京市北京市北京市</text>
+  </view>
+
+
+
+
+
+
+
+</view>

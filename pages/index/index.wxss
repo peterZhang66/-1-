@@ -1,0 +1,139 @@
+page{font-size: 26rpx}
+.index-head{
+      position: relative;
+      margin-top:88rpx;
+}
+.index-head swiper{
+      height:340rpx;
+}
+.index-head swiper image{
+      display: block;
+      height:340rpx;
+}
+ .top{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:88rpx;
+      background:#86E3EA;
+      display: flex;
+      align-items: center;
+      z-index: 999;
+}
+.s1s{
+      margin-left:5%;
+}
+.input-box{
+      width:63%;
+      height:60rpx;
+      background:#60CCD4;
+      border-radius: 5px;
+       margin-left:3%;
+       display: flex;
+       align-items: center;
+       
+}
+.input-box icon{
+      margin-left:5px;
+}
+.input-box input{
+      color:#fff;
+      flex:1;
+      margin-left:5px;
+}
+.input-placeholder{
+      color:#fff!important;
+}
+.r-lm{
+       margin-left:3%; 
+}
+.r-hy{
+       margin-left:3%; 
+}
+
+.index-body{
+     
+}
+
+.index-body .title{
+      display: flex;
+       padding:10px 10px 0 10px;
+}
+.index-body .tit-r{
+      flex:1;
+      display: flex;
+    justify-content: flex-end;
+      align-items: center;
+}
+.tit-r .time-box{
+      padding:3px 5px;
+      background:#595959;
+      border-radius: 3px;
+      color:#fff;
+      margin:0 1%;
+      font-size: 25rpx;
+}
+.index-content{
+       padding: 10px;
+      display: flex;
+      justify-content: space-around;
+}
+.index-content image{
+      width:198rpx;
+      height:200rpx;
+}
+.money-1{
+      text-align: center;
+      font-size: 12pt;
+      color:#FB2F74;
+      font-weight: 600;
+}
+.money-1 text{
+       font-size: 10pt;
+}
+.money-2{
+      text-align: center;
+      font-size: 12pt;
+      color:#FB2F74;
+       font-weight: 600;
+}
+
+.t2{
+      overflow: hidden
+}
+.t2 .title{
+      background:#F5F8FA;
+      height:66rpx;
+     
+     justify-content: center;
+     font-size: 13pt;
+     font-weight: 600;
+   
+}
+.t2 .title text{
+       background-image: -webkit-linear-gradient(0,#1EEAE7,#509AF6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.t2 .index-content .text{
+      overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+padding:7px 0;
+color:#333;
+}
+.t2 .index-content .item{
+      width:198rpx;
+}
+.t2 .index-content .item .money3{
+      font-size: 11pt;
+      color:#FB2F74;
+}
+.t2 .index-content .item .money3 text{
+       font-size: 9pt;
+}
+.more-box{
+      overflow: hidden;
+      padding:10px 10px 0 10px ;
+}

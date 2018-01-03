@@ -1,0 +1,75 @@
+<!--pages/list/list.wxml-->
+<view class='search crea'>
+      <view>
+            <icon type='search' size='18' color='#999'></icon>
+            <input placeholder='输入搜索...'></input>
+      </view>
+</view>
+
+<view class='top-btn-box crea' >
+      <view class='item'>综合</view>
+      <view class='item'>销量</view>
+      <view class='item'>新品</view>
+      <view class='item'>价格</view>
+</view>
+
+<view class='list-content' style='height:{{windowHeight-ElemH}}px'>
+      <scroll-view class='list-left' scroll-y scroll-with-animation>
+                  <view class='view'>全部</view>
+                  <view class='view'>配件</view>
+                  <view class='view'>礼品</view>
+                  <view class='view'>吉他教材</view>
+                  <view class='view'>钢琴教材</view>
+      </scroll-view> 
+
+      <scroll-view class='list-right' scroll-y scroll-with-animation>
+                 <view class='item'>
+                       <view class='cont'>
+                               <image src='../img/img.jpg'></image>
+                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
+                               <view class='cont-foot'>
+                                          <view class='item'>
+                                                <view class='money'>￥100<text>.20</text></view>
+                                          </view>
+                                          <view class='item' class='shopping'><view>已出售：200</view></view>
+                               </view>
+                       </view>
+                 </view>
+                 <view class='item'>
+                       <view class='cont'>
+                               <image src='../img/img.jpg'></image>
+                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
+                               <view class='cont-foot'>
+                                          <view class='item'>
+                                                <view class='money'>￥100<text>.20</text></view>
+                                          </view>
+                                          <view class='item' class='shopping'><view>已出售：200</view></view>
+                               </view>
+                       </view>
+                 </view>
+                 <view class='item'>
+                       <view class='cont'>
+                               <image src='../img/img.jpg'></image>
+                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
+                               <view class='cont-foot'>
+                                          <view class='item'>
+                                                <view class='money'>￥100<text>.20</text></view>
+                                          </view>
+                                          <view class='item' class='shopping'><view>已出售：200</view></view>
+                               </view>
+                       </view>
+                 </view>
+                 <view class='item'>
+                       <view class='cont'>
+                               <image src='../img/img.jpg'></image>
+                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
+                               <view class='cont-foot'>
+                                          <view class='item'>
+                                                <view class='money'>积分：200</view>
+                                          </view>
+                                          <view class='item' class='shopping'><view>已出售：200</view></view>
+                               </view>
+                       </view>
+                 </view>
+      </scroll-view> 
+</view>

@@ -1,0 +1,23 @@
+<view class="title">店铺名称</view>
+<view class="bgBox">
+  <view class="goods">
+    <image src='../img/ico.png'></image>
+    <view class="txt">
+    <view class="txtTit">大豆油大豆油大豆油大豆油</view>
+    <view>规格:5斤</view>
+    <view>属性:x2</view>
+    <text style='color:red'>￥111</text>
+    </view>
+  </view>
+  <view class='num'>
+  共1件商品
+  <text>合计 <text style='color:red'>￥111</text>(含运费加钱￥0.00）</text>
+  </view>
+ <view>
+  <text>退货说明：</text>
+  <textarea></textarea>
+ </view>
+ <view class="btnBox">
+  <view class="btn">提交</view>
+ </view>
+</view>

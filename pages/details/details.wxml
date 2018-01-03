@@ -1,0 +1,60 @@
+<!--pages/details/details.wxml-->
+<view class='head-btn-box'>
+      <view class='item'>全部订单</view>
+       <view class='item'>待付款</view>
+        <view class='item'>待发货</view>
+         <view class='item'>待收货 </view>
+</view>
+
+<view class='content'>
+            <view class='title'>店铺名称</view>
+            <!-- <view class='cont'>
+                  <view class='icon-box'>
+                        <icon type='circle'></icon>
+                  </view>
+                  <navigator class='buy-c' url="../orderdetail/orderdetail">
+                        <image src='../img/imga.jpg' style='width:200rpx;height:200rpx;'></image>
+                        <view class='buy-content'>
+                              <view class='text'>大豆油大豆油大豆油大豆油大豆油</view>
+                              <view class='litext'>
+                                    规格：啦啦啦啦
+                              </view>
+                              <view class='litext'>
+                                    属性：X2
+                              </view>
+                              <view class='money'>￥200.<text>00</text></view>
+                        </view>
+                  </navigator>
+            </view> -->
+            <view class='cont' wx:for="{{goods}}" wx:for-item="good" wx:for-index="index">
+                  <radio bindtap='checkChange' checked='{{good.checked}}' data-index="{{index}}"></radio>
+                  <navigator class='buy-c' url="../orderdetail/orderdetail">
+                        <image src='../img/imga.jpg' style='width:200rpx;height:200rpx;'></image>
+                        <view class='buy-content'>
+                              <view class='text'>{{good.goodName}}</view>
+                              <view class='litext'>
+                                    规格：{{good.guige}}
+                              </view>
+                              <view class='litext'>
+                                    属性：{{good.shuxing}}
+                              </view>
+                              <view class='money'>￥{{good.price}}.<text>00</text> x{{good.count}}</view> 
+                        </view>
+                  </navigator>
+            </view>
+
+            <view class='status-box'>
+                  <view class='item1'>
+                        共{{gong}}件商品
+                  </view>
+                   <view class='item'>
+                        合计 <text class='money'>￥{{heji}}.<text>00</text></text> （含运费加钱￥0.00 ）
+                   </view>
+            </view>
+            <view class='btn-box'>
+                        <view class='btns'>按钮1</view>
+                        <view class='btns'>按钮2</view>
+                        <view class='btns2'>立即付款</view>
+            </view>
+            <view class='x'></view>
+</view>

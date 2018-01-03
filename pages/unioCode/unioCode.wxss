@@ -1,0 +1,75 @@
+/* pages/unioCode/unioCode.wxss */
+.header{
+  height: 260rpx;
+  background: #169ada;
+  padding: 25rpx;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: flex-end; */
+  align-content: space-between;
+}
+.header .left{
+  width: 206rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.header .left image{
+  width:174rpx;
+  height: 174rpx;
+  border-radius: 50%
+}
+.header .right{
+  margin-left: 32rpx;
+  width:297rpx;
+  }
+  .header .right .txt{
+    height: 91rpx;
+    line-height: 91rpx;
+    color:#fff;
+    text-align: center;
+    font-size: 40rpx;
+  }
+  .userId{height: 71rpx;text-align: center;line-height: 71rpx;width: 100%;border-radius: 71rpx;border:1rpx solid #48aada;color: #fff;font-size: 26rpx}
+  .unioCode{
+    height: 467rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  .codeBox{
+    width: 342rpx;
+    height: 366rpx;
+    border:4rpx solid #9d9d9d;
+    border-radius: 20rpx;
+    text-align: center;
+    padding: 18rpx;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .unioCode image{width: 286rpx;height: 286rpx}
+  .comboBox{
+    height: 153rpx;
+    display: flex;
+    align-items:center;
+    justify-content:center
+  }
+  .combo{
+    width:189rpx;
+    height: 59rpx;
+    line-height: 59rpx;
+    text-indent: 40rpx;
+    font-size: 28rpx;
+    border-radius: 18rpx;
+    border: 2rpx solid #ef8643;
+    position: relative
+  }
+  .combo image{
+    width: 19rpx;
+    height: 17rpx;
+    position:absolute;
+    left:14rpx;
+    top:22rpx;
+  }

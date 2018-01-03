@@ -1,0 +1,4 @@
+.bgBox{padding: 0 22rpx;display: flex;justify-content: space-around;flex-wrap: wrap;}
+image{width: 300rpx;height: 300rpx;}
+.li{display: flex;flex-direction: column;width:300rpx}
+.money{display: flex;justify-content: space-between;width: 300rpx;font-size: 26rpx}

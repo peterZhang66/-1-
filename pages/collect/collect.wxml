@@ -1,0 +1,51 @@
+<view class="bgBox">
+  <view class="li">
+  <image src='../img/good1.png'></image>
+  <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>鞋子鞋子鞋子鞋子鞋子鞋子鞋子</text>
+      <view class="money">
+        <text style='color:red'>￥158.00</text>
+        <text>找相似</text>
+      </view>
+  </view>
+   <view class="li">
+  <image src='../img/good1.png'></image>
+  <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>鞋子鞋子鞋子鞋子鞋子鞋子鞋子</text>
+      <view class="money">
+        <text style='color:red'>￥158.00</text>
+        <text>找相似</text>
+      </view>
+  </view>
+   <view class="li">
+  <image src='../img/good1.png'></image>
+  <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>鞋子鞋子鞋子鞋子鞋子鞋子鞋子</text>
+      <view class="money">
+        <text style='color:red'>￥158.00</text>
+        <text>找相似</text>
+      </view>
+  </view>
+   <view class="li">
+  <image src='../img/good1.png'></image>
+  <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>鞋子鞋子鞋子鞋子鞋子鞋子鞋子</text>
+      <view class="money">
+        <text style='color:red'>￥158.00</text>
+        <text>找相似</text>
+      </view>
+  </view>
+   <view class="li">
+  <image src='../img/good1.png'></image>
+  <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>鞋子鞋子鞋子鞋子鞋子鞋子鞋子</text>
+      <view class="money">
+        <text style='color:red'>￥158.00</text>
+        <text>找相似</text>
+      </view>
+  </view>
+   <view class="li">
+  <image src='../img/good1.png'></image>
+  <text style='font-size:30rpx;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>鞋子鞋子鞋子鞋子鞋子鞋子鞋子</text>
+      <view class="money">
+        <text style='color:red'>￥158.00</text>
+        <text>找相似</text>
+      </view>
+  </view>
+  
+</view>

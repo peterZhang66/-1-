@@ -1,0 +1,88 @@
+<view class="title">
+  <checkbox></checkbox>
+店铺名称</view>
+<view class="bgBox">
+  <view class="goods">
+    <image src='../img/ico.png' class="img" mode='widthFix'></image>
+    <view class="txt">
+    <view class="txtTit" style='font-size:30rpx'>大豆油大豆油大豆油大豆油</view>
+    <view class="update">
+      <view class="left">
+        <view>规格:5斤</view>
+        <view>属性:x2</view>
+      </view>
+      <image src='../img/update.png' mode='widthFix' style='width:30rpx'></image>
+    </view>
+    <view class="add">
+      <text style='color:red;font-size:30rpx'>积分:100 *3</text>
+      <view class="num1">
+        <image src='../img/jian.png' style='width:45rpx;' mode='widthFix'></image>
+        <view class="number">0</view>
+        <image src='../img/jia.png' style='width:45rpx' mode='widthFix'></image>
+      </view>
+    </view>
+    
+    </view>
+  </view>
+  <view class="info colSplit">
+    <view class="infoT">
+      <text>收货人:张三</text>
+      <text>更换</text>
+    </view>
+    <view class="infoT">
+      收货地址：北京
+      <text>新增</text>
+    </view>
+  </view>
+  <view class="else colSplit">
+    <view class="rowSplit" style="justify-content:flex-start">
+      <text style='width:30%'>派送方式:上门自提</text>
+      <text style='width:40%'>厂家发货:（快递费10元）</text>
+      <view style='width:30%x'>团购消费:石年
+        <checkbox></checkbox>
+      </view>
+    </view>
+    <view  class="rowSplit" style="justify-content:flex-start">
+      <text  style='width:30%'>不参与团购</text>
+      <view style='width:40%'>托管比例:三分之二
+        <checkbox></checkbox>
+      </view>
+      <view  style='width:30%'>不托管
+        <checkbox></checkbox>
+      </view>
+    </view>
+    <view class="tongyi">
+      <view>
+        <checkbox></checkbox>
+        我已阅读并同意《商品订单认购书》及《委托销售承诺书》
+      </view>
+      <view>
+      <text style='width:150rpx;display:inline-block'>买家留言</text>
+      <text style='color:#b1afb0;font-size:11px'>选填：对本次交易的说明</text>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view>朋友代付
+      <checkbox></checkbox>
+    </view>
+    <view>
+      合计：
+      <text style='color:#fe2641'>￥111 + 积分90</text>
+    </view>
+    <view>提交订单</view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

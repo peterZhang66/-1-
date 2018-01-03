@@ -1,0 +1,56 @@
+<view class='body'>
+  <!-- <checkbox-group bindchange="checkboxChange(currentIndex1,currentIndex2)"> -->
+      <view class='content' wx:for="{{listData}}" wx:for-item = "itemshop" wx:for-index = "currentIndex1">
+            <view class='title'>{{itemshop.shopName}}</view>
+            
+                <view class='cont' wx:for = "{{itemshop.goods}}" wx:for-item = "itemgood" wx:for-index = "currentIndex2">
+                     <checkbox checked='{{itemgood.checked}}' bindtap='checkboxChange' data-current="{{[currentIndex1,currentIndex2]}}"></checkbox>
+                      <view class='buy-c'>
+                            <image src='{{itemgood.img}}' style='width:200rpx;height:200rpx;'></image>
+                            <view class='buy-content'>
+                                  <view class="count">
+                                      <view class="li" bindtap="toReduce" data-reducef="{{currentIndex1}}" data-reduces="{{currentIndex2}}">-</view>
+                                      <view class="li1">{{itemgood.count}}</view>
+                                      <view class="li" bindtap='toAdd' data-addf="{{currentIndex1}}" data-adds="{{currentIndex2}}">+</view>
+                                  </view>
+                                  <view class='text'>{{itemgood.goodName}}</view>
+                                  <view class='litext'>
+                                        规格：{{itemgood.guige}}
+                                  </view>
+                                  <view class='litext'>
+                                        属性：{{itemgood.shuxing}}
+                                  </view>
+                                  <view class='money'>￥{{itemgood.price}}.
+                                        <text>00</text>
+                                  </view>
+                            </view>
+                      </view>
+                </view>
+            <view class='status-box'>
+                  <view class='item1'>
+                        共{{itemshop.counts}}件商品
+                  </view>
+                  <view class='item'>
+                        合计
+                        <text class='money'>￥{{itemshop.heji}}.<text>00</text></text> （含运费加钱￥{{itemshop.yunfei}}.00 ）
+                  </view>
+            </view>
+
+            <view class='x' style='margin-top:10px;'></view>
+      </view>
+      
+
+      
+      <!-- </checkbox-group> -->
+</view>
+
+
+<view class='foot-fu'>
+      <view class='item1'>
+      <checkbox checked='{{isSelectAll}}' bindtap='selectAllChange'></checkbox>
+                 <view class='money'>
+                        总计：{{total}}.<text>00</text>
+                 </view>
+      </view>
+      <view class='item2'>结算</view>
+</view>

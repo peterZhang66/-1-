@@ -1,0 +1,42 @@
+/* pages/protocol/protocol.wxss */
+.page{
+      padding:35rpx 44rpx;
+
+}
+.head{
+      display: flex;
+}
+.head .item{
+      width:50%;
+}
+.head .item input{
+      border:1px solid #C8C8C8;
+      text-align: center;
+     
+     
+      display:inline-block;
+}
+
+.text{
+      height:138px;
+      border:1px solid #C8C8C8;
+      width:auto;
+      margin-top:10px;
+      padding:10px 0;
+      color:#B5B4B5;
+}
+.text .title{
+      text-align: center;
+
+}
+.cont{
+      padding:10px;
+      line-height: 2;
+      text-indent: 2em;
+      text-align: justify;
+}
+.foot{
+     color:#B5B4B5;
+     text-align: center;
+     margin-top:10px;
+}

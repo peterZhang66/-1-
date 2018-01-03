@@ -1,0 +1,121 @@
+/* pages/shopcar/shopcar.wxss */
+.content{
+      padding:10px;
+}
+.content .title{
+      line-height: 30px;
+      border-bottom:1px solid #ECECEC;
+      margin-bottom:10px;
+}
+.cont{
+      display: flex;
+      align-items: center;
+      margin-bottom:10px;
+}
+
+.buy-c{
+      display: flex;
+      flex:1;
+      margin-left:5px;
+}
+.buy-content{
+      flex:1;
+      margin-left:10px;
+      position: relative
+}
+.text{
+      color:#666;
+      line-height: 20px;
+}
+.litext{
+      font-size: 9pt;
+      margin:5px 0;
+      color:#666;
+}
+.money{
+      font-size: 11pt;
+      color:red;
+}
+.money text{
+      font-size: 9pt;
+}
+.status-box{
+      display: flex;
+      border-bottom:1px solid #ECECEC;
+      padding:10px 0;
+        color:#444;
+}
+.status-box .item1{
+flex:1
+}
+.status-box .item{
+      flex:2; 
+}
+.btn-box{
+      display: flex;
+      justify-content: flex-end;
+
+}
+.btns,.btns2{
+      width:80px;
+      text-align: center;
+      height:30px;
+      line-height: 30px;
+      border-radius: 5px;
+      margin:7px 3px;
+}
+.btns{
+      color:#999;
+      border:1px solid #595959;
+}
+.btns2{
+       border:1px solid #169ADA;
+      background:#169ADA;
+      color:#fff;
+}
+.x{
+      height:10px;
+      background:#F4F8FB;
+}
+.body{
+      margin-bottom:50px;
+}
+.foot-fu{
+      display: flex;
+      position: fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:50px;
+      line-height: 50px;
+      background: #fff
+}
+.foot-fu .item1{
+      flex:2;
+      padding:0 5px;
+      display: flex;
+      align-items: center;
+}
+.foot-fu .item1 view{
+      flex:1;
+    color:red;
+      
+}
+.foot-fu .item1 view text,.foot-fu .item1 view icon{
+      display: inline-block;
+      vertical-align: middle;
+}
+.foot-fu .item1 view icon{
+      margin-top:20px;
+      margin-right:5px;
+}
+.foot-fu .item2{
+      flex:1;
+      background:red;
+      color:#fff;
+      text-align: center;
+}
+/*加减数量  */
+.count{width: 195rpx;height: 45rpx;display: flex;position: absolute;left:195rpx;top:140rpx}
+.count .li{border:2rpx solid #999;flex: 1;display: flex;justify-content: center;align-items: center}
+.count .li1{border:2rpx solid #999;flex: 1.8;margin:0 10rpx;display: flex;justify-content: center;align-items: center}

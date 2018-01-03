@@ -1,0 +1,81 @@
+<view class="header">
+  <view class="left">
+  <image src='../img/userImg.png'></image>
+  </view>
+  <view class="right">
+    <view class="txt">棒棒爱情故事</view>
+    <view class="userId">ID:111111111</view>
+  </view>
+</view>
+<view class='bgBox'>
+  <view class="orderForm">
+    <view class='left'>
+      <image src='../img/icon2.png'></image>
+    我的订单</view>
+    <navigator class='right' url='../details/details'>
+      查看全部订单
+      <image src='../img/icon3.png'></image>
+    </navigator>
+  </view>
+  <view class='orderTab'>
+    <navigator class="tab" url='../daifu/daifu'>
+      <image src='../img/icon01.png'></image>
+      代付款
+    </navigator>
+    <view class="tab">
+      <image src='../img/icon02.png'></image>
+      代发货
+    </view>
+    <view class="tab">
+      <image src='../img/icon02.png'></image>
+      代收货
+    </view>
+    <navigator class="tab" url='../tuihuo/tuihuo'>
+      <image src='../img/icon04.png' class='only'></image>
+      退款/退货
+    </navigator>
+    
+
+  </view>
+  <navigator class="money" url='../wallet/wallet'>
+      <view class="left">
+      <image src='../img/icon21.png'></image> 
+      我的钱包
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+  <navigator class="money" url='../collect/collect'>
+      <view class="left">
+      <image src='../img/icon22.png'></image> 
+     我的收藏
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+  <navigator class="money" url='../protocol/protocol'>
+      <view class="left">
+      <image src='../img/icon23.png'></image> 
+      消费联盟
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+  <navigator class="money" url='../addressManagement/addressManagement'>
+      <view class="left">
+      <image src='../img/icon24.png'></image> 
+      地址管理
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+  <navigator class="money" url='../authentication/authentication'>
+      <view class="left">
+      <image src='../img/icon25.png'></image> 
+      安全认证
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+
+
+
+
+
+
+</view>

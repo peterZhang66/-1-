@@ -1,0 +1,67 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*base.css  */
+.clearfix:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+.clearfix {
+		zoom: 1;
+	}
+.fl{float:left}
+ .fr{float: right}
+page{font-size: 26rpx}
+/*上下均分  */
+.colSplit{display: flex;flex-direction: column;justify-content:space-around;align-content: space-around;}
+/*左右均分  */
+.rowSplit{display: flex;justify-content: center;align-items: flex-start}
+page{
+      font-size: 10pt;
+}
+.more{
+      font-size: 8pt;
+      margin-left:2%;
+}
+.btn{
+      width:120px;
+      height:32px;
+      background:#169ADA;
+      border-radius: 32px;
+      line-height: 32px;
+      text-align: center;
+      color:#fff;
+      margin:10% auto;
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

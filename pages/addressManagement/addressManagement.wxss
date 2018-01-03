@@ -1,0 +1,10 @@
+page{background: #eee}
+.add{height: 90rpx;line-height: 90rpx;position: fixed;bottom: 0;left: 0;background: #86e3ea;width: 100%;text-align: center;color: #777676;font-size: 20rpx}
+.address{padding: 25rpx 20rpx 0;background: #fff}
+.info{display: flex;justify-content: space-between}
+.info .left{height: 75rpx;padding-bottom: 25rpx;display: flex;flex-direction: column}
+.blank{height: 26rpx;border-bottom: 2rpx solid #f5f5f5}
+.update{height: 80rpx;display: flex;justify-content: space-between;align-items: center}
+.update .left{display: flex;align-content: center;width: 300rpx;justify-content: flex-start;align-items: center;color: #fe2641}
+.update image{width: 30rpx}
+.right{width: 300rpx;display: flex;justify-content:space-around}

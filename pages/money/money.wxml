@@ -1,0 +1,9 @@
+<!--pages/money/money.wxml-->
+<view class='input-box'>
+      <view class='text'>金额</view>
+      <input placeholder='请输入充值金额' type='digit'></input>
+</view>
+
+<navigator class='btn'>
+            下一步
+</navigator>      

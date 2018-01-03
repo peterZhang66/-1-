@@ -1,0 +1,12 @@
+page{background: #eee}
+.money{height: 112rpx;display: flex;justify-content: space-between;align-items: center;background: #fff;padding: 0 22rpx;margin-bottom:40rpx }
+.money image{width: 12rpx;height: 24rpx}
+.money .left image{width: 70rpx;height: 70rpx}
+.money .left{width:472rpx;display: flex;justify-content:flex-start;align-items: center;font-size: 30rpx}
+.txt{display: flex;flex-direction: column;justify-content: space-around;align-items: flex-start;margin-left: 33rpx}
+.title{height: 83rpx;line-height: 83rpx;background: #fff;font-size: 26rpx;color: #545454;padding-left: 25rpx}
+.input{background: #fff;height: 110rpx;display:flex;justify-content: flex-start;align-items: center;padding-left: 25rpx}
+.input image{width: 37rpx;}
+.tixian{height: 68rpx;display: flex;justify-content: space-between;align-items: center;background: #fff;padding:0 25rpx;border-top: 2rpx solid #eee}
+.submit{margin-top: 70rpx;padding:0 25rpx}
+button{background: #9acdf1;border-radius: 10rpx;height: 76rpx;line-height: 76rpx;text-align: center;color: #c3e2f7}

@@ -1,0 +1,27 @@
+<view class='bgBox'>
+  <view class="newKwd">
+    <text>新密码:</text>
+    <input placeholder='请输入登陆密码'></input>
+  </view>
+  <view class="newKwd">
+    <text>确认密码:</text>
+    <input placeholder='请再次输入登陆密码'></input>
+  </view>
+  <view class="newKwd">
+    <text>新手机:</text>
+    <input placeholder='请输入手机'></input>
+    <view class="send">发送验证码</view>
+  </view>
+  <view class="newKwd">
+    <text>验证码:</text>
+    <input placeholder='请输入验证码'></input>
+    <text>输入验证码</text>
+  </view>
+  <view class="newKwd">
+    <text></text>
+    <view class="ok">确定</view>
+    <view class="find">找回密码</view>
+  </view>
+</view>
+
+

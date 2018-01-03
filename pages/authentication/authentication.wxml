@@ -1,0 +1,19 @@
+<!--pages/authentication/authentication.wxml-->
+<navigator class='list-box' url='../adminKwd/adminKwd'>
+      <text>登录密码</text>
+      <!-- <input></input> -->
+   <image src='../img/r-img.png'></image>
+</navigator>
+<navigator class='list-box' url='../adminKwd/adminKwd'>
+      <text>支付密码</text>
+      <!-- <input></input> -->
+         <image src='../img/r-img.png'></image>
+</navigator>
+<navigator class='list-box' url='../phoneCheck/phoneCheck'>
+      <text>手机验证</text>
+      <!-- <input></input> -->
+      <image src='../img/r-img.png'></image>
+      <view>若手机更换请尽快更改</view>
+</navigator>
+
+<!-- <navigator class='btn' url='../phoneCheck/phoneCheck'>确定</navigator> -->

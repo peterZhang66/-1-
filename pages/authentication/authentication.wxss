@@ -1,0 +1,29 @@
+/* pages/authentication/authentication.wxss */
+.list-box{
+      display: flex;
+      padding:10px;
+      border-bottom:1px solid #dfdfdf;
+      align-items: center;
+      position: relative;
+      justify-content: space-between
+}
+.list-box text{
+      width:80px;
+}
+/* .list-box input{
+      flex:1;
+      text-align: right;
+      margin-right:10px;
+      text-align: left
+} */
+.list-box image{
+      width:8px;
+      height:14px;
+}
+.list-box view{
+      position: absolute;
+      bottom:0;
+      left:10px;
+      font-size: 8pt;
+      color:#B5B4B5;
+}

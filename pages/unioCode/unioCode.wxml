@@ -1,0 +1,21 @@
+<view class="header">
+  <view class="left">
+  <image src='../img/userImg.png'></image>
+  </view>
+  <view class="right">
+    <view class="txt">棒棒爱情故事</view>
+    <view class="userId">ID:111111111</view>
+  </view>
+</view>
+<view class="unioCode">
+  <view class="codeBox">
+    <image src='../img/codeImg.png'></image>
+    <text>十年康华联盟</text>
+  </view>
+</view>
+<view class="comboBox">
+<view class="combo">
+  <image src='../img/icon1.png'></image>
+切换联盟码
+</view>
+</view>

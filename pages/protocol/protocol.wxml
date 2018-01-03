@@ -1,0 +1,29 @@
+<view class='page'>
+
+      <view class='head'>
+
+            <view class='item'>
+                  <input placeholder='请填写您组建的联盟名称'></input>
+            </view>
+            <view class='item'>
+                  <picker range='{{arr}}'>
+                        <input placeholder='请选择联盟合伙人数量' disabled='true'></input>
+                  </picker>
+            </view>
+      </view>
+
+      <scroll-view class='text' scroll-y>
+            <view class='title'>团购消费合作协议书</view>
+            <view class='cont'>
+                  团购消费合作协议书团购消费合作协议书团购消费合作协议书团购消费合 作协议书作协议书作协议书作协议书作协议书作协议书作协议书作协议书作协 作协议书议书 团购消费合作协议书团购消费合作协议书团购消费合作协议书团购消费合 作协议书作协议书作协议书作协议书作协议书作协议书作协议书作协议书作协 作协议书议书 团购消费合作协议书团购消费合作协议书团购消费合作协议书团购消费合 作协议书作协议书作协议书作协议书作协议书作协议书作协议书作协议书作协 作协议书议书
+            </view>
+      </scroll-view>
+
+     
+            <checkbox-group bindchange="" class='foot'>
+                        <checkbox value="" style="transform:scale(.7);"/>我已经阅读并且同意协议
+            </checkbox-group>
+    
+
+    <view class='btn'>提交</view>
+</view>

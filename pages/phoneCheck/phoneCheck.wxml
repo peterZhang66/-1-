@@ -1,0 +1,33 @@
+<view class='bgBox'>
+  <view class="header">
+    <text>已绑定手机号</text>
+    <text>若想改绑手机，请输入以下信息</text>
+  </view>
+  <view class="newKwd">
+    <text>原手机:</text>
+    <input placeholder='请输入手机'></input>
+    <view class="send">发送验证码</view>
+  </view>
+  <view class="newKwd">
+    <text> 验证码:</text>
+    <input placeholder='请输入验证码'></input>
+    <text>输入验证码</text>
+  </view>
+  <view class="newKwd">
+    <text>新手机:</text>
+    <input placeholder='请输入手机'></input>
+    <view class="send">发送验证码</view>
+  </view>
+  <view class="newKwd">
+    <text> 验证码:</text>
+    <input placeholder='请输入验证码'></input>
+    <text>输入验证码</text>
+  </view>
+  <view class="newKwd">
+    <text></text>
+    <view class="ok">确定</view>
+
+  </view>
+</view>
+
+

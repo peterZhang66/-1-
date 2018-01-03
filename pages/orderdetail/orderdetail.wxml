@@ -1,0 +1,73 @@
+<view class="title">店铺名称
+  <text style='color:red'>交易成功</text>
+</view>
+<view class="bgBox">
+  <view class="goods">
+    <image src='../img/ico.png'></image>
+    <view class="txt">
+    <view class="txtTit">大豆油大豆油大豆油大豆油</view>
+    <view>规格:5斤</view>
+    <view>属性:x2 29积分</view>
+    <text style='color:red'>￥111</text>
+    </view>
+  </view>
+  <view class='num'>
+  共1件商品
+  <text>合计 <text style='color:red'>￥111</text>(含运费加钱￥0.00）</text>
+  </view>
+  <view class='people'>
+    <view class="left">
+      <text>收件人：张三</text>
+      <text>收货地址：非晶</text>
+    </view>
+    <view class="right">查看物流</view>
+  </view>
+  <view class='li'>客服电话：1111111</view>
+  <view class='li'>订单编号：1111111
+    <text class="copy">复制</text>
+  </view>
+  <view class='li'>创建时间：1111111</view>
+  <view class='li'>付款时间：1111111</view>
+  <view class='li'>发货时间：1111111</view>
+  <view class='li'>成交时间：1111111</view>
+   <view class="table">
+    <view class="tr">
+      <view class="td-1 td bold">托管比例</view>
+      <view class="td-2 td bold">消费金额</view>
+      <view class="td-3 td bold">预计分润</view>
+      <view class="td-4 td bold">已发分润</view>
+      <view class="td-5 td bold">查看协议</view>
+    </view>
+    <view class="tr">
+      <view class="td-1 td">1</view>
+      <view class="td-2 td">2017月</view>
+      <view class="td-3 td">消费方式</view>
+      <view class="td-4 td">消费金额</view>
+      <view class="td-5 td">消费方式</view>
+    </view>
+  </view>
+  <view class="bigBox">
+    预计托管利润
+  </view>
+   <view class="table">
+    <view class="tr">
+      <view class="td-1 td bold">日期</view>
+      <view class="td-2 td bold">利润基数</view>
+      <view class="td-3 td bold">利润积分点</view>
+      <view class="td-4 td bold">托管利润</view>
+    </view>
+    <view class="tr">
+      <view class="td-1 td">1</view>
+      <view class="td-2 td">2017月</view>
+      <view class="td-3 td">消费方式</view>
+      <view class="td-4 td">消费金额</view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+</view>

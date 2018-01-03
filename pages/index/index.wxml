@@ -1,0 +1,123 @@
+
+ <view class='top'>
+            <image src='../img/s1s.png' style='width:56rpx;height:55rpx;' class='s1s' bindtap='click'></image>
+            <view class='input-box'>
+                  <icon type='search' size='18' color='#fff'></icon>
+                  <input placeholder='输入搜索的商品...' placeholder-style></input>
+            </view>
+             <navigator url='../unioCode/unioCode'  class="r-lm"> 
+              <image src='../img/r-lm.png' style='width:41rpx;height:58rpx;'></image>
+             </navigator> 
+              <navigator url='../yaoqing/yaoqing' class="r-hy"> 
+              <image src='../img/r-hy.png' style='width:40rpx;height:57rpx;'></image>
+              </navigator> 
+              
+</view>
+<view class='index-head'>
+      <swiper indicator-dots autoplay indicator-color='#fff' indicator-active-color='#86E3EA' circular>
+            <swiper-item>
+                  <image src='../img/banner.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>
+            <swiper-item>
+                  <image src='../img/banner1.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>
+            <swiper-item>
+                  <image src='../img/banner2.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>
+            <swiper-item>
+                  <image src='../img/banner3.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>   
+      </swiper>     
+</view>
+
+<view class='index-body'>
+<!--即将到时  -->
+            <view class='t1'>
+                        <view class='title'>
+                              <image src='../img/ds.png' style='width:131rpx;height:61rpx;'></image>
+                              <view class='tit-r'>
+                                    <image src='../img/time-out.png' style='width:114rpx;height:29rpx;'></image>
+                                       <view class='time-box'>{{days}}</view>: 
+                                        <view class='time-box'>{{hours}}</view>:   
+                                         <view class='time-box'>{{minutes}}</view> :
+                                          <view class='time-box'>{{seconds}}</view>
+                                          <navigator url='../list/list' class='more'>更多>></navigator>     
+                              </view>
+                        </view>
+                        <view class='index-content'>
+                                    <navigator class='item' url='../shop/shop'>
+                                          <image src='../img/img1.jpg' ></image>
+                                          <view class='money-1'>￥1000<text>.20</text></view>
+                                    </navigator>
+                                    <navigator class='item' url='../shop/shop'>
+                                          <image src='../img/img1.jpg' ></image>
+                                          <view class='money-1'>￥1000<text>.20</text></view>
+                                    </navigator>
+                                    <navigator class='item' url='../shop/shop'>
+                                          <image src='../img/img1.jpg' ></image>
+                                          <view class='money-1'>积分：59999</view>
+                                    </navigator>
+                        </view>
+            </view>
+<!--新人专享  -->
+            <view class='t2'>
+                  <view class='title'><text>新人专享</text></view>
+                   <view  class='more-box'><navigator  url='../list/list' class='more' style='float:right;'>更多>></navigator>   </view>
+                  <view class='index-content'>
+                             
+                              <navigator class='item' url='../shop/shop'>
+                                    <image src='../img/img2.jpg' ></image>
+                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                                    <view class='money3'>
+                                                ￥369<text>.33</text>
+                                    </view>
+                              </navigator>
+                               <navigator class='item' url='../shop/shop'>
+                                    <image src='../img/img2.jpg' ></image>
+                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                                    <view class='money3'>
+                                                积分：5000
+                                    </view>
+                              </navigator>
+                              <navigator class='item' url='../shop/shop'>
+                                    <image src='../img/img2.jpg' ></image>
+                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                                    <view class='money3'>
+                                                积分：5000
+                                    </view>
+                              </navigator>
+                  </view>
+            </view>
+<!--积分专区  -->
+            <view class='t2'>
+                  <view class='title'><text>积分专区</text></view>
+                   <view  class='more-box'><navigator url='../list/list' class='more' style='float:right;'>更多>></navigator>   </view>
+                  <view class='index-content'>
+                             
+                              <navigator class='item' url='../shop/shop' >
+                                    <image src='../img/img2.jpg' ></image>
+                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                                    <view class='money3'>
+                                                ￥369<text>.33</text>
+                                    </view>
+                              </navigator>
+                               <navigator class='item' url='../shop/shop'>
+                                    <image src='../img/img2.jpg' ></image>
+                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                                    <view class='money3'>
+                                                积分：5000
+                                    </view>
+                              </navigator>
+                              <navigator class='item' url='../shop/shop'>
+                                    <image src='../img/img2.jpg' ></image>
+                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                                    <view class='money3'>
+                                                积分：5000
+                                    </view>
+                              </navigator>
+                  </view>
+            </view>
+
+</view>
+
+

@@ -1,0 +1,22 @@
+<view class="money">
+      <view class="left">
+      <image src='../img/jianhang.png'></image> 
+        <view class="txt">
+          <text>中国建设银行</text>
+          <text style='color:#858585;font-size:26rpx'>尾号111储蓄卡</text>
+        </view>
+      </view>
+      <image src='../img/icon3.png'></image>
+  </view>
+  <view class="title">提现金额(收取 0.1%服务费)</view>
+  <view class="input">
+    <image src='../img/renminbi.png' mode='widthFix'></image> 
+    <input></input>
+  </view>
+  <view class="tixian">
+    可用余额2222元
+    <text style='color:#55abee'>全部提现</text>
+  </view>
+  <view class="submit">
+    <button>两小时内到账，确认提交</button>
+  </view>

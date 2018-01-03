@@ -1,0 +1,11 @@
+page{background: #eee}
+/*公共样式  */
+.mg{margin-left: 20rpx}
+.padding{padding: 0 31rpx 0 45rpx}
+
+.header{height: 156rpx;background: #fff;display: flex;justify-content: flex-start;align-items: center;margin-bottom: 20rpx}
+.header image{width: 100rpx;margin-right: 20rpx}
+.txt{display: flex;flex-direction: column;justify-content: flex-start;align-items: flex-start;color: #9b999f;font-size: 26rpx}
+.bg{padding: 50rpx 32rpx 50rpx 45rpx;background: #fff;}
+.address{padding-bottom: 70rpx}
+.address image{width: 23rpx}

@@ -1,0 +1,31 @@
+<view class="header">
+  <view class="left">
+  <image src='../img/userImg.png'></image>
+  </view>
+  <view class="right">
+    <view class="txt">棒棒爱情故事</view>
+    <view class="userId">ID:111111111</view>
+  </view>
+</view>
+<view class="title border">
+  邀请你加入xx联盟
+</view>
+<view class="info border">
+  <text>联盟名称</text>
+  <text>打发斯蒂芬</text>
+</view>
+<view class="info border">
+  <text>联盟名称</text>
+  <text>打发斯蒂芬</text>
+</view>
+<view class="info border">
+  <text>联盟名称</text>
+  <text>打发斯蒂芬</text>
+</view>
+<view class="remind">
+<text>啊打发是发萨菲</text>
+<text>sadfsaasdasdfasfdsa</text>
+</view>
+<view class="submit">
+  <view class="main">提交</view>
+</view>

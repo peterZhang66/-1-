@@ -1,0 +1,8 @@
+page{background: #f6f5fa}
+.blue{height: 245rpx;background: #1592cf;padding: 0 22rpx;display: flex;flex-direction: column}
+.top,.bottom{flex: 1;display: flex;justify-content: space-around;align-items: center;border-bottom: 2rpx solid #ccc;color: #fff}
+.money{height: 80rpx;display: flex;justify-content: space-between;align-items: center;background: #fff;padding: 0 22rpx;margin-bottom:2rpx }
+.money image{width: 12rpx;height: 24rpx}
+.money .left image{width: 40rpx;height: 40rpx}
+.money .left{width: 180rpx;display: flex;align-items: center;font-size: 30rpx}
+.money .left image{margin-right: 20rpx}

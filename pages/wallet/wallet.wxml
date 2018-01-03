@@ -1,0 +1,49 @@
+<view class="blue">
+  <view class="top">
+    <text>余额</text>
+    <text>优惠券</text>
+    <text>积分</text>
+  </view>
+  <view class="bottom">
+    <text>300</text>
+    <text>100</text>
+    <text>200</text>
+  </view>
+</view>
+<navigator class="money" url='../money/money'>
+      <view class="left">
+      <image src='../img/icon21.png'></image> 
+      充值
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+  <navigator class="money" style='margin-bottom:50rpx' url='../tixian/tixian'>
+      <view class="left">
+      <image src='../img/icon22.png'></image> 
+      提现
+      </view>
+      <image src='../img/icon3.png'></image>
+  </navigator>
+  <view class="money">
+      <view class="left">
+      <image src='../img/icon23.png'></image> 
+      转账
+      </view>
+      <image src='../img/icon3.png'></image>
+  </view>
+  <navigator url='../walletDetails/walletDetails'>
+    <view class="money">
+      <view class="left">
+      <image src='../img/icon24.png'></image> 
+      明细
+      </view>
+      <image src='../img/icon3.png'></image>
+    </view>
+  </navigator>
+  <view class="money">
+      <view class="left">
+      <image src='../img/icon25.png'></image> 
+      银行卡
+      </view>
+      <image src='../img/icon3.png'></image>
+  </view>

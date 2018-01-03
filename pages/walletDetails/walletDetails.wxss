@@ -1,0 +1,10 @@
+.bgBox{padding:0 22rpx}
+.table{width: 100%;border-top:2rpx solid #ccc;border-left:2rpx solid #ccc;margin-top: 40rpx}
+.tr{display: flex;height:50rpx;line-height: 50rpx}
+.td-1{flex:1;border-bottom:2rpx solid #ccc;border-right:2rpx solid #ccc}
+.td-2{flex:1;border-bottom:2rpx solid #ccc;border-right:2rpx solid #ccc}
+.td-3{flex:1;border-bottom:2rpx solid #ccc;border-right:2rpx solid #ccc}
+.td-4{flex:1;border-bottom:2rpx solid #ccc;border-right:2rpx solid #ccc}
+.td-5{flex:1;border-bottom:2rpx solid #ccc;border-right:2rpx solid #ccc}
+.td{display: flex;justify-content: center;align-items: center;font-size: 15rpx;color: #838383}
+.bold{font-weight: bold;color: #000} 

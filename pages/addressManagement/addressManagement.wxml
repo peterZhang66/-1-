@@ -1,0 +1,29 @@
+<view class="add">添加新地址</view>
+<view class='address'>
+  <view class="info">
+    <view class='left'>
+      <text>sfdsf</text>
+      <text>sdfsaf</text>
+    </view>
+    <view class='right'>
+    1565546
+    </view>
+  </view>
+  <view class="blank"></view>
+  <view class="update">
+    <view class="left">
+      <image src='../img/true.png' mode='widthFix'></image>
+      默认地址
+    </view>
+    <view class="right">
+      <view class="li">
+        <image  mode='widthFix' src="../img/update.png"></image>
+        编辑
+      </view>
+      <view class="li">
+        <image  mode='widthFix' src="../img/del.png"></image>
+        删除
+      </view>
+    </view>
+  </view>
+</view>

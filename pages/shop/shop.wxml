@@ -1,0 +1,77 @@
+<!--pages/shop/shop.wxml-->
+<swiper indicator-dots  indicator-color='#fff' indicator-active-color='#86E3EA' circular>
+            <swiper-item>
+                  <image src='../img/banner.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>
+            <swiper-item>
+                  <image src='../img/banner1.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>
+            <swiper-item>
+                  <image src='../img/banner2.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>
+            <swiper-item>
+                  <image src='../img/banner3.jpg' mode='widthFix' style='width:100%'></image>
+            </swiper-item>   
+</swiper>  
+
+<view class='content'>
+      <view class='title-box'>
+            <view class='title'>这里是名称多余会换行</view>
+            <view class='title-bottom'>
+                  <view class='item money'>￥158.<text>00</text></view>
+                    <view class='item'>快递：免运费</view>
+                      <view class='item'>已售：900桶</view>
+                        <view class='item'>北京</view>
+            </view>
+      </view>
+      <view class='cont'>
+                  <view class='title'>选择</view>
+                  <view class='c'>
+                        <view>选项1</view>
+                         <view>选项1</view>
+                          <view>选项1</view>
+                           <view>选项1</view>
+                  </view>
+      </view>
+       <view class='cont'>
+                  <view class='title'>分类</view>
+                  <view class='c'>
+                        <view>选项1</view>
+                         <view>选项1</view>
+                          <view>选项1</view>
+                           <view>选项1</view>
+                  </view>
+      </view>
+       <view class='cont flex'>
+                  <view class='title'>购买数量</view>
+                  <view class='num-box'>
+                        <view class='remove' bindtap='remove'>-</view>
+                        <view class='num'>{{num}}</view>
+                        <view class='add' bindtap='add'>+</view>
+                  </view>
+      </view>
+</view>
+
+
+
+<view class='foot'>
+      <view class='item'>
+            <view>
+                  <image src='../img/2017-12-21_150140.jpg' style='width:27px;height:25px;'></image>
+                  <view class='t'>店铺</view>
+            </view> 
+            <navigator open-type='switchTab' url='../shopcar/shopcar' style='flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center'>
+                 <image src='../img/321.jpg' style='width:26px;height:24px;'></image>
+                  <view class='t'>购物车</view>
+
+            </navigator>
+            <view>
+                  <image src='../img/2017-12-21_150605.jpg' style='width:24px;height:24px;'></image>
+                  <view class='t'>收藏</view>
+            </view>
+      </view>
+      <view class='item ' >
+                  <view class='btns bg1'>加入购物车</view>
+                  <view class='btns bg2'>立即购买</view>
+      </view>
+</view>

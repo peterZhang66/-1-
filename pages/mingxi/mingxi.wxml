@@ -1,0 +1,18 @@
+<view class="bgBox">
+  <view class="table">
+    <view class="tr">
+      <view class="td-1 td bold">序号</view>
+      <view class="td-2 td bold">订单时间</view>
+      <view class="td-3 td bold">消费方式</view>
+      <view class="td-4 td bold">消费金额</view>
+      <view class="td-5 td bold">消费方式</view>
+    </view>
+    <view class="tr">
+      <view class="td-1 td">1</view>
+      <view class="td-2 td">2017月</view>
+      <view class="td-3 td">消费方式</view>
+      <view class="td-4 td">消费金额</view>
+      <view class="td-5 td">消费方式</view>
+    </view>
+  </view>
+</view>

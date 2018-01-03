@@ -1,0 +1,103 @@
+/*个人中心  */
+page{background: #eee;}
+.header{
+  height: 260rpx;
+  background: #169ada;
+  padding: 25rpx;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: flex-end; */
+  align-content: space-between;
+}
+/*共用部分  */
+.header .left{
+  width: 206rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.header .left image{
+  width:174rpx;
+  height: 174rpx;
+  border-radius: 50%
+}
+.header .right{
+  margin-left: 32rpx;
+  width:297rpx;
+  }
+  .header .right .txt{
+    height: 91rpx;
+    line-height: 91rpx;
+    color:#fff;
+    text-align: center;
+    font-size: 40rpx;
+  }
+  .userId{height: 71rpx;text-align: center;line-height: 71rpx;width: 100%;border-radius: 71rpx;border:1rpx solid #48aada;color: #fff;font-size: 26rpx}
+  /*二维码  */
+  .unioCode{
+    height: 467rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    /*我的订单  */
+    .orderForm{
+      padding: 0 22rpx;
+      height: 110rpx;
+      background: #fff;
+      margin-bottom:10rpx;
+      display: flex;
+      justify-content: space-between;
+      font-size: 30rpx;
+      }
+      .orderForm .left{
+        width:174rpx;
+        text-align: right;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        font-weight: bold
+        }
+        .orderForm .left image{
+          width: 37rpx;
+          height: 41rpx;
+        }
+      .orderForm .right{
+        width:200rpx;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        font-size: 24rpx;
+         color: #ccc
+        }
+        .orderForm .right image{
+          width: 12rpx;
+          height: 23rpx;
+          margin-left:14rpx ;
+        }
+        .orderTab{
+          height: 142rpx;
+          background: #fff;
+          display: flex;
+          justify-content:space-around;
+          margin-bottom: 30rpx;
+        }
+        .orderTab image{
+          width: 44rpx;
+          height: 38rpx;
+          margin-bottom: 20rpx;
+        }
+        .tab{
+          width: 140rpx;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 26rpx;
+          color: #727071
+        }
+        .orderTab image.only{width: 42rpx;height: 42rpx}
+        .money{height: 80rpx;display: flex;justify-content: space-between;align-items: center;background: #fff;padding: 0 22rpx;margin-bottom:2rpx }
+        .money image{width: 12rpx;height: 24rpx}
+        .money .left image{width: 40rpx;height: 40rpx}
+        .money .left{width: 180rpx;display: flex;justify-content: space-between;align-items: center;font-size: 30rpx}
