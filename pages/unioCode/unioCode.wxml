@@ -7,15 +7,28 @@
     <view class="userId">ID:111111111</view>
   </view>
 </view>
-<view class="unioCode">
-  <view class="codeBox">
-    <image src='../img/codeImg.png'></image>
-    <text>十年康华联盟</text>
-  </view>
-</view>
-<view class="comboBox">
-<view class="combo">
-  <image src='../img/icon1.png'></image>
-切换联盟码
-</view>
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    
+        <view class="unioCode">
+          <view class="codeBox">
+            <image src='../img/codeImg.png'></image>
+            <text>{{array[index]}}</text>
+          </view>
+        </view>
+        <view class="comboBox">
+              <view class="combo">
+                <image src='../img/icon1.png'></image>
+              切换联盟码
+              </view>
+              <!-- <view class="list">
+                  <view class="li">世界联盟</view>
+                  <view class="li">北大联盟</view>
+                  <view class="li">世界联盟</view>
+                  <view class="li">北大联盟</view>
+              </view> -->
+        </view>
+        <view class="picker">
+        </view>
+  </picker>
 </view>

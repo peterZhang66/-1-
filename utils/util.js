@@ -5,10 +5,8 @@ const formatTime = date => {
   const hour = date.getHours()
   const minute = date.getMinutes()
   const second = date.getSeconds()
-
   return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':')
 }
-
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
@@ -35,7 +33,36 @@ function checkTime(i) { //将0-9的数字前面加上0，例1变为01
   }
   return i;
 }
+/**
+   * 数据请求
+   */
+function getNetJson(url, params) {
+    return new Promise(function(resolve,reject) {//Promise要大写
+      wx.request({
+        url,
+        data:params,
+        header: {
+          'content-type':'json'//默认值
+        },
+        success:resolve,
+        fail:reject
+      });
+    });
+  };
+/**
+ * 数据缓存
+  */
+  function getStorage (key) {
+    return new promise(function (resolve,reject) {
+      wx.getStorage({
+        key,
+        success:resolve,
+        fail:reject
+      })
+    })
+  }
 module.exports = {
-  leftTimer: leftTimer,
-  formatTime: formatTime
+  leftTimer,
+  formatTime,
+  getNetJson
 }    

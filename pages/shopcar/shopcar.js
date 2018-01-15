@@ -1,4 +1,6 @@
 // pages/shopcar/shopcar.js
+var app = getApp();
+// console.log(app)
 Page({
   /**
    * 页面的初始数据
@@ -6,8 +8,16 @@ Page({
   data: {
     listData: [{ "shopName": "店铺1", "counts": 0, "heji": 0, "yunfei": 1000, "goods": [{ "goodName": "shangpin1", "img": "../img/imga.jpg", "guige": "1L", "shuxing": '食物油', "count": "3", "price": "30", "checked": true }, { "goodName": "shangpin2", "img": "../img/imga.jpg", "guige": "2L", "shuxing": '汽油', "count": "8", "price": "10000", "checked": true }] }, { "shopName": "店铺2", "heji": 0, "yunfei": 1000, "counts": 0, "goods": [{ "goodName": "shangpin1", "img": "../img/imga.jpg", "guige": "1L", "shuxing": '食物油', "count": "3", "price": "30", "checked": false }, { "goodName": "shangpin2", "img": "../img/imga.jpg", "guige": "2L", "shuxing": '汽油', "count": "8", "price": "10000", "checked": true }] }, { "shopName": "店铺2", "heji": 0, "yunfei": 1000, "counts": 0, "goods": [{ "goodName": "shangpin1", "img": "../img/imga.jpg", "guige": "1L", "shuxing": '食物油', "count": "3", "price": "30", "checked": false }, { "goodName": "shangpin2", "img": "../img/imga.jpg", "guige": "2L", "shuxing": '汽油', "count": "8", "price": "10000", "checked": true }] }, { "shopName": "店铺2", "heji": 0, "yunfei": 1000, "counts": 0, "goods": [{ "goodName": "shangpin1", "img": "../img/imga.jpg", "guige": "1L", "shuxing": '食物油', "count": "3", "price": "30", "checked": false }, { "goodName": "shangpin2", "img": "../img/imga.jpg", "guige": "2L", "shuxing": '汽油', "count": "8", "price": "10000", "checked": true }] }],
     total:0,
-    isSelectAll:false
+    isSelectAll:false,
+    isShow:false
   },
+   /**
+   * 删除商品
+   */
+  
+   /**
+   * 减少商品数量
+   */
   toReduce(e) {
     var bus = this.data.listData;
     bus.forEach(function (v,i) {
@@ -26,12 +36,14 @@ Page({
             })
         }
     })
-    // 更新数据渲染视图
-    this.setData({
+    this.setData({// 更新数据渲染视图
       listData: bus,
     })
     this.render()
   },
+  /**
+   * 添加商品数量
+   */
   toAdd(e) {
     var bus = this.data.listData;
     bus.forEach(function (v, i) {
@@ -44,15 +56,17 @@ Page({
           }
         })
       }
-    })
-    // 更新数据渲染视图
-    this.setData({
+    }) 
+    this.setData({// 更新数据渲染视图
       listData: bus
     })
-    // 渲染
-    this.render()
+    
+    this.render()// 渲染页面
   },
-  checkboxChange(e) {
+  /**
+   * 全选联动
+   */
+  checkboxChange(e) {//单个商品选中
     var bus = this.data.listData,index1=0,index2 = 0;
     var currentIndex = e.currentTarget.dataset.current;
     var isSelectAll = false;//初始化
@@ -62,8 +76,7 @@ Page({
         if (currentIndex[0] == i1 && currentIndex[1] == i2) {
           v2.checked = !v2.checked;
         }
-        // 全都为true
-        if (v2.checked) { 
+        if (v2.checked) { // 全都为true
           index1++;
           if (index1 == index2) {
             isSelectAll = true;
@@ -78,8 +91,7 @@ Page({
     })
     this.render()
   },
-  // 是否勾选全选按钮
-  selectAllChange() {
+  selectAllChange() { // 是否勾选全选按钮
     var bus = this.data.listData;
     var isSelectAll = this.data.isSelectAll;
     isSelectAll = !isSelectAll;
@@ -99,42 +111,46 @@ Page({
     }) 
     this.render();
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
     this.render();
   },
- render() {
-    // 取出数据操作数据
-    var bus = this.data.listData,total = 0;
-    bus.forEach((v) => {
-      var heji = 0, checkNumber = 0
-      v.goods.forEach((val) => {
-        if (val.checked == true) {
-          //合计
-          heji += val.price * val.count;
-          v.heji = heji 
-          // 选中几个
-          checkNumber++;
-          // 总共几件商品
-          v.counts = checkNumber;
-        }
-      })
-        // 有勾选加运费
-        if (checkNumber > 0) {
-          heji += v.yunfei
-           //合计
+   /**
+   * 渲染页面函数
+   */
+ render() { 
+   var bus = this.data.listData, total = 0;// 取出数据操作数据
+   if (bus) {
+     bus.forEach((v) => {
+       var heji = 0, checkNumber = 0
+       v.goods.forEach((val) => {
+         if (val.checked == true) {
+           heji += val.price * val.count;//合计
+           v.heji = heji
+           checkNumber++;// 选中几个
+           v.counts = checkNumber;// 总共几件商品
+         } else {
+           heji += 0;
            v.heji = heji;
-          // 总计
-          total += v.heji;
-        }
-    });
-    // 更新数据渲染视图
-    this.setData({
-      listData: bus,
-      total: total
-    })
+           v.counts = checkNumber
+         }
+       })
+       if (checkNumber > 0) {// 有勾选加运费
+         heji += v.yunfei
+         v.heji = heji; //合计
+         total += v.heji;// 总计
+       }
+     });
+     this.setData({// 更新数据渲染视图
+       listData: bus,
+       total: total,
+       isShow: false
+     })
+   } else {//无商品显示为空
+     this.setData({
+       isShow:true
+     })
+   }
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -177,11 +193,9 @@ Page({
   onReachBottom: function () {
   
   },
-
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
   }
 })

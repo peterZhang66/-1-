@@ -119,3 +119,6 @@ flex:1
 .count{width: 195rpx;height: 45rpx;display: flex;position: absolute;left:195rpx;top:140rpx}
 .count .li{border:2rpx solid #999;flex: 1;display: flex;justify-content: center;align-items: center}
 .count .li1{border:2rpx solid #999;flex: 1.8;margin:0 10rpx;display: flex;justify-content: center;align-items: center}
+/*提示空  */
+.nothing{padding:0;display: none}
+.show{margin-top:-100rpx;display: block}

@@ -35,7 +35,6 @@
                         <text class='money'>￥{{itemshop.heji}}.<text>00</text></text> （含运费加钱￥{{itemshop.yunfei}}.00 ）
                   </view>
             </view>
-
             <view class='x' style='margin-top:10px;'></view>
       </view>
       
@@ -44,12 +43,12 @@
       <!-- </checkbox-group> -->
 </view>
 
-
+<view class="nothing {{isShow?'show':''}}" >空空如也，快去抢购吧</view>
 <view class='foot-fu'>
       <view class='item1'>
       <checkbox checked='{{isSelectAll}}' bindtap='selectAllChange'></checkbox>
                  <view class='money'>
-                        总计：{{total}}.<text>00</text>
+                        总计：￥{{total}}.<text>00</text>
                  </view>
       </view>
       <view class='item2'>结算</view>

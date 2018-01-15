@@ -54,7 +54,8 @@
     height: 153rpx;
     display: flex;
     align-items:center;
-    justify-content:center
+    justify-content:center;
+    position: relative
   }
   .combo{
     width:189rpx;
@@ -72,4 +73,16 @@
     position:absolute;
     left:14rpx;
     top:22rpx;
+  }
+  .list{
+    position: absolute;
+    top:120rpx;
+    left: 50%;
+    margin-left: -100rpx
+  }
+  .list .li{
+    width:200rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center
   }

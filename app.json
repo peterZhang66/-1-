@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/index/index", 
+    "pages/unioCode/unioCode",
     "pages/details/details",
     "pages/shopcar/shopcar",
     "pages/shop/shop",
@@ -22,13 +23,12 @@
     "pages/daifu/daifu",
     "pages/yaoqing/yaoqing",
     "pages/personalCenter/personalCenter",
-    "pages/unioCode/unioCode",
-    "pages/list1/list1",
     "pages/list/list",
+    "pages/list1/list1",
     "pages/protocol/protocol",
     "pages/money/money",
-    "pages/authentication/authentication"
-    
+    "pages/authentication/authentication",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

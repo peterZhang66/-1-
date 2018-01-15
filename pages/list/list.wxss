@@ -35,7 +35,6 @@
 .list-content{
       background:#F5F5F5;
       display: flex;
-      height: 100%
 }
 .list-left{
       width:25%;
@@ -52,7 +51,6 @@
       background:#fff;
       flex:1;
       padding:15rpx;
-      height: 85%
      
 }
 .list-right .item{
@@ -79,6 +77,7 @@ overflow: hidden;
 margin: 10rpx;
 font-size: 10pt;
 color:#666;
+height: 34px
 }
 .cont-foot{
       margin: 10rpx;
@@ -99,23 +98,8 @@ color:#666;
       font-size: 9pt;
       color:#999;
 }
-/*teb切换  */
-
-.swiper-tab{  
-    width: 100%;  
-    border-bottom: 2rpx solid #777777;  
-    text-align: center;  
-    line-height: 80rpx;}  
-.swiper-tab-list{  font-size: 30rpx;  
-    display: inline-block;  
-    width: 33.33%;  
-    color: #777777;  
-}  
-.on{ color: #da7c0c;  
-    border-bottom: 5rpx solid #da7c0c;}  
-  
-.swiper-box{ display: block; height:1334rpx; width: 100%; overflow: hidden; }  
-.swiper-box view{  
-    text-align: center;  
-}  
-page{position:fixed}
+/*没有商品提示  */
+.noGood{height: 60px;line-height: 60px;text-align: center}
+.noGood image{width: 30px;vertical-align: middle}
+.show{display: block}
+.hide{display: none}

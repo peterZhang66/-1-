@@ -6,117 +6,39 @@
       </view>
 </view>
 
-<!-- <view class='top-btn-box crea' >
-      <view class='item'>综合</view>
-      <view class='item'>销量</view>
-      <view class='item'>新品</view>
-      <view class='item'>价格</view>
-</view> -->
-<view class="swiper-tab top-btn-box crea">  
-    <view class="item swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">综合</view>  
-    <view class="item swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">销量</view>  
-    <view  class="item swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">新品</view>  
-    <view  class="item swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">价格</view>  
-</view>  
-  
- <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+<view class='top-btn-box crea' >
+      <view class='item' bindtap='filter' data-type='综合'>综合</view>
+      <view class='item' bindtap='filter' data-type='销量'>销量</view>
+      <view class='item' bindtap='filter' data-type='新品'>新品</view>
+      <view class='item' bindtap='filter' data-type='价格'>价格</view>
+</view>
 
-    <swiper-item>  
-      <view class='list-content' style='height:{{windowHeight-ElemH}}px'>
-      <view class='list-left' scroll-y scroll-with-animation>
-                  <view class='view'>全部</view>
-                  <view class='view'>配件</view>
-                  <view class='view'>礼品</view>
-                  <view class='view'>吉他教材</view>
-                  <view class='view'>钢琴教材</view>
-      </view> 
+<view class='list-content' style='height:{{windowHeight-ElemH}}px'>
+      <scroll-view class='list-left' scroll-y scroll-with-animation>
+                  <view class='view' bindtap='filter' data-type='全部'>全部</view>
+                  <view class='view' bindtap='filter' data-type='配件'>配件</view>
+                  <view class='view' bindtap='filter' data-type='礼品'>礼品</view>
+                  <view class='view' bindtap='filter' data-type='吉他教材'>吉他教材</view>
+                  <view class='view' bindtap='filter' data-type='钢琴教材'>钢琴教材</view>
+      </scroll-view> 
+
       <scroll-view class='list-right' scroll-y scroll-with-animation>
-                 <view class='item'>
+                <view class="noGood {{isShow?'show':'hide'}}">
+                    <image src='../img/cry.png' mode='widthFix'></image>
+                    没有找到相应的商品
+                </view>
+                 <view class='item' wx:for="{{list}}" bindtap='toDetail' data-='{{item.id}}'>
                        <view class='cont'>
-                               <image src='../img/img.jpg'></image>
-                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
+                               <image src='{{item.imgPath}}'></image>
+                               <view class='text'>{{item.productName}}</view>
                                <view class='cont-foot'>
                                           <view class='item'>
-                                                <view class='money'>￥100<text>.20</text></view>
+                                                <view class='money'>￥{{item.price}}</view>
                                           </view>
-                                          <view class='item' class='shopping'><view>已出售：200</view></view>
+                                          <view class='item' class='shopping'><view>已出售：{{item.beSold}}</view></view>
                                </view>
                        </view>
                  </view>
-                 <view class='item'>
-                       <view class='cont'>
-                               <image src='../img/img.jpg'></image>
-                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
-                               <view class='cont-foot'>
-                                          <view class='item'>
-                                                <view class='money'>￥100<text>.20</text></view>
-                                          </view>
-                                          <view class='item' class='shopping'><view>已出售：200</view></view>
-                               </view>
-                       </view>
-                 </view>
-                 <view class='item'>
-                       <view class='cont'>
-                               <image src='../img/img.jpg'></image>
-                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
-                               <view class='cont-foot'>
-                                          <view class='item'>
-                                                <view class='money'>￥100<text>.20</text></view>
-                                          </view>
-                                          <view class='item' class='shopping'><view>已出售：200</view></view>
-                               </view>
-                       </view>
-                 </view>
-                 <view class='item'>
-                       <view class='cont'>
-                               <image src='../img/img.jpg'></image>
-                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
-                               <view class='cont-foot'>
-                                          <view class='item'>
-                                                <view class='money'>￥100<text>.20</text></view>
-                                          </view>
-                                          <view class='item' class='shopping'><view>已出售：200</view></view>
-                               </view>
-                       </view>
-                 </view>
-                 <view class='item'>
-                       <view class='cont'>
-                               <image src='../img/img.jpg'></image>
-                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
-                               <view class='cont-foot'>
-                                          <view class='item'>
-                                                <view class='money'>￥100<text>.20</text></view>
-                                          </view>
-                                          <view class='item' class='shopping'><view>已出售：200</view></view>
-                               </view>
-                       </view>
-                 </view>
-                 <view class='item'>
-                       <view class='cont'>
-                               <image src='../img/img.jpg'></image>
-                               <view class='text'>这里是商品名称这里是商品名称这里是商品名称</view>
-                               <view class='cont-foot'>
-                                          <view class='item'>
-                                                <view class='money'>积分：200</view>
-                                          </view>
-                                          <view class='item' class='shopping'><view>已出售：200</view></view>
-                               </view>
-                       </view>
-                 </view>
+                 
       </scroll-view> 
 </view>
-  
-    </swiper-item>  
-
-    <swiper-item>  
-      <view>我是呵呵</view>  
-    </swiper-item>  
-
-    <swiper-item>  
-      <view>我是嘿嘿</view>  
-    </swiper-item>  
-    <swiper-item>  
-      <view>我是嘿嘿</view>  
-    </swiper-item> 
-</swiper>   
-

@@ -3,7 +3,7 @@
             <image src='../img/s1s.png' style='width:56rpx;height:55rpx;' class='s1s' bindtap='click'></image>
             <view class='input-box'>
                   <icon type='search' size='18' color='#fff'></icon>
-                  <input placeholder='输入搜索的商品...' placeholder-style></input>
+                  <input placeholder='输入搜索的商品...' placeholder-style bindconfirm="completed" value="{{search}}"></input>
             </view>
              <navigator url='../unioCode/unioCode'  class="r-lm"> 
               <image src='../img/r-lm.png' style='width:41rpx;height:58rpx;'></image>
@@ -15,18 +15,9 @@
 </view>
 <view class='index-head'>
       <swiper indicator-dots autoplay indicator-color='#fff' indicator-active-color='#86E3EA' circular>
-            <swiper-item>
-                  <image src='../img/banner.jpg' mode='widthFix' style='width:100%'></image>
+            <swiper-item wx:for="{{banner}}">
+                  <image src='{{item.imgPath}}' mode='widthFix' style='width:100%'></image>
             </swiper-item>
-            <swiper-item>
-                  <image src='../img/banner1.jpg' mode='widthFix' style='width:100%'></image>
-            </swiper-item>
-            <swiper-item>
-                  <image src='../img/banner2.jpg' mode='widthFix' style='width:100%'></image>
-            </swiper-item>
-            <swiper-item>
-                  <image src='../img/banner3.jpg' mode='widthFix' style='width:100%'></image>
-            </swiper-item>   
       </swiper>     
 </view>
 
@@ -41,49 +32,27 @@
                                         <view class='time-box'>{{hours}}</view>:   
                                          <view class='time-box'>{{minutes}}</view> :
                                           <view class='time-box'>{{seconds}}</view>
-                                          <navigator url='../list/list' class='more'>更多>></navigator>     
+                                          <view  class='more' bindtap='toMore' data-type='isThere2'>更多>></view>     
                               </view>
                         </view>
                         <view class='index-content'>
-                                    <navigator class='item' url='../shop/shop'>
-                                          <image src='../img/img1.jpg' ></image>
-                                          <view class='money-1'>￥1000<text>.20</text></view>
-                                    </navigator>
-                                    <navigator class='item' url='../shop/shop'>
-                                          <image src='../img/img1.jpg' ></image>
-                                          <view class='money-1'>￥1000<text>.20</text></view>
-                                    </navigator>
-                                    <navigator class='item' url='../shop/shop'>
-                                          <image src='../img/img1.jpg' ></image>
-                                          <view class='money-1'>积分：59999</view>
+                                    <navigator class='item' url='../shop/shop' wx:for="{{isThere1}}">
+                                          <image src='{{item.imgPath}}'></image>
+                                          <view class='money-1'>￥{{item.price}}</view>
                                     </navigator>
                         </view>
             </view>
 <!--新人专享  -->
             <view class='t2'>
                   <view class='title'><text>新人专享</text></view>
-                   <view  class='more-box'><navigator  url='../list/list' class='more' style='float:right;'>更多>></navigator>   </view>
+                   <view  class='more-box'><view class='more' style='float:right;' bindtap='toMore' data-type='newExclusive2'>更多>></view>   </view>
                   <view class='index-content'>
                              
-                              <navigator class='item' url='../shop/shop'>
-                                    <image src='../img/img2.jpg' ></image>
-                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                              <navigator class='item' url='../shop/shop' wx:for="{{newExclusive1}}">
+                                    <image src='{{item.imgPath}}' ></image>
+                                    <view class='text'>{{item.productName}}</view>
                                     <view class='money3'>
-                                                ￥369<text>.33</text>
-                                    </view>
-                              </navigator>
-                               <navigator class='item' url='../shop/shop'>
-                                    <image src='../img/img2.jpg' ></image>
-                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
-                                    <view class='money3'>
-                                                积分：5000
-                                    </view>
-                              </navigator>
-                              <navigator class='item' url='../shop/shop'>
-                                    <image src='../img/img2.jpg' ></image>
-                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
-                                    <view class='money3'>
-                                                积分：5000
+                                                ￥{{item.price}}
                                     </view>
                               </navigator>
                   </view>
@@ -91,28 +60,14 @@
 <!--积分专区  -->
             <view class='t2'>
                   <view class='title'><text>积分专区</text></view>
-                   <view  class='more-box'><navigator url='../list/list' class='more' style='float:right;'>更多>></navigator>   </view>
+                   <view  class='more-box'><view class='more' style='float:right;' bindtap='toMore' data-type='present2'>更多>></view>   </view>
                   <view class='index-content'>
                              
-                              <navigator class='item' url='../shop/shop' >
-                                    <image src='../img/img2.jpg' ></image>
-                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
+                              <navigator class='item' url='../shop/shop' wx:for="{{present1}}">
+                                    <image src='{{item.imgPath}}' ></image>
+                                    <view class='text'>{{item.productName}}</view>
                                     <view class='money3'>
-                                                ￥369<text>.33</text>
-                                    </view>
-                              </navigator>
-                               <navigator class='item' url='../shop/shop'>
-                                    <image src='../img/img2.jpg' ></image>
-                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
-                                    <view class='money3'>
-                                                积分：5000
-                                    </view>
-                              </navigator>
-                              <navigator class='item' url='../shop/shop'>
-                                    <image src='../img/img2.jpg' ></image>
-                                    <view class='text'>这是文字溢出隐藏这是文字溢出隐藏</view>
-                                    <view class='money3'>
-                                                积分：5000
+                                                积分：{{item.jifen}}
                                     </view>
                               </navigator>
                   </view>
